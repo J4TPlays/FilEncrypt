@@ -1,3 +1,17 @@
+"""
+
+FilEncrypt
+- by J4T
+
+Binary encryption/decryption algorithm written in Python 3.
+
+~ Copyright © J4T 2020 ~
+https://github.com/J4TPlays/FilEncrypt/
+
+"""
+
+
+
 import random as rd
 import time
 
