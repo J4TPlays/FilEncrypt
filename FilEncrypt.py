@@ -5,6 +5,8 @@ FilEncrypt
 
 Binary encryption/decryption algorithm written in Python 3.
 
+Version 1.0
+
 ~ Copyright © J4T 2020 ~
 https://github.com/J4TPlays/FilEncrypt/
 
