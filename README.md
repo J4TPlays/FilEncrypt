@@ -1,6 +1,6 @@
 # FilEncrypt
 ## - by J4T
-FilEncrypt is an open-source encryption algorithm written in Python 3. It is used for encrypting and decrypting data by using either random key generation or password-based key generation. 
+FilEncrypt is an open-source encryption algorithm written in Python 3. It is used for encrypting and decrypting data by using either random key generation or password-based key generation. This script is recommended either for FTP / Chat servers or encrypting files. 
 
 
 ## Usage
@@ -9,7 +9,7 @@ This distribution of FilEncrypt was designed to be imported as a module to make 
 ### Making a key
 #### make_key( key_length = 1 , password = False )
 
-The key length must be a positive integer greater than 0 so that the key can be generated. The password, however, is optional but must be in a **str** format. 
+The key length must be a positive integer greater than 0 so that the key can be generated. The password, however, is optional but must be in a **str** format. You can run `make_key()` with no arguments and it will give a completely random key. The key length and password can both be changed to whatever the user chooses. 
 
 #### serialise( key )
 
