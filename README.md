@@ -11,10 +11,15 @@ This distribution of FilEncrypt was designed to be imported as a module to make 
 
 The key length must be a positive integer greater than 0 so that the key can be generated. The password, however, is optional but must be in a **str** format. You can run `make_key()` with no arguments and it will give a completely random key. The key length and password can both be changed to whatever the user chooses. 
 
+### Making a layered key
+#### layered_key( password , layers = 1, keylength = 1)
+
+Creates a layered key by encrypting a key multiple times. The more layers, the more times the key gets encrypted. The key length is recommended to be larger than 1 for this to be effective, however.
+
 ### Serialising keys
 #### serialise( key )
 
-Serialising the key will convert the key into a format that can either be sent or written to a file. 
+Serialising the key will convert the key into a format that can either be sent or written to a file. The size of this will always be a factor of 256 + 9, e.g. 256 + 9 = 265 bytes, 512 + 9 = 521 bytes, etc.
 
 ### Reading a serialised key
 #### read_key( key )
