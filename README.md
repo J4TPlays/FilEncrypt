@@ -1,5 +1,5 @@
 # FilEncrypt
-## - by J4T
+## - by James "J4T" Forty
 FilEncrypt is an open-source encryption algorithm written in Python 3. It is used for encrypting and decrypting data by using either random key generation or password-based key generation. This script is recommended either for FTP / Chat servers or encrypting files. 
 
 
