@@ -1,10 +1,15 @@
 """
+
 FilEncrypt
 - by J4T
+
 Binary encryption/decryption algorithm written in Python 3.
+
 Version 1.1
+
 ~ Copyright © J4T (James Forty) 2021 ~
 https://github.com/J4TPlays/FilEncrypt/
+
 """
 
 
@@ -74,6 +79,6 @@ def layered_key(password=False,layers=1,keylength_=1):         # creates a new k
         b.append(x)
     c=[hl.sha512(str(i).encode("utf-8")).hexdigest() for i in b]
     keys=[make_key(password=i) for i in c[0:-1]]
-    final_key=serialise(make_key(keylength=keylength_,password=c[-1]))[0:-9]    hl.sha512(str(i).encode("utf-8")).hexdigest()
+    final_key=serialise(make_key(keylength=keylength_,password=c[-1]))[0:-9]
     for i in keys:final_key=encrypt(final_key,i)
-    return read_key(final_key+=b"/febinary")
+    return read_key(final_key+b"/febinary")
